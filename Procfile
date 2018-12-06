@@ -1,1 +1,1 @@
-web: gunicorn lingprog.wsgi --log-file -
+gunicorn lingprog.wsgi --log-file -

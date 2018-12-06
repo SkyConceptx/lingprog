@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import lingprog.core.views
+from lingprog.subscriptions.views import subscribe
 
 urlpatterns = [
     path('', lingprog.core.views.home),
+    path('inscricao/', subscribe, name='inscricao'),
     path('admin/', admin.site.urls),
 ]
